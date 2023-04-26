@@ -114,6 +114,15 @@ span{
   max-height: 450px;
   }
 }
+
+@media (max-width: 450px) {
+  .navbar-brand{
+    font-size: 1rem;
+  }
+  .navbar-brand img{
+    height: 25px;
+  }
+}
 /* ----- End Navigation Bar ----- */
 /* ----- Start Dropdown Sub Menu ----- */
 .dropdown{
@@ -242,6 +251,37 @@ span{
     color: #c02;
     justify-content: inherit;
     vertical-align: middle !important;
+}
+
+@media (max-width: 850px) {
+  .dropdown{
+   top: 10%;
+  }
+  .fusion-megamenu-widgets-container{
+    display: none;
+  }
+  .dropdown ul{
+    margin: 10px 15px !important;
+    transition: all 0.5s;
+  }
+  .dropdown ul li{
+    margin: 10px 15px !important;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 450px) {
+  .fusion-megamenu-widgets-container{
+    display: none;
+  }
+  .dropdown ul{
+    margin: 7px 3px !important;
+    transition: all 0.5s;
+  }
+  .dropdown ul li{
+    margin: 0 3px !important;
+    transition: all 0.5s;
+  }
 }
 /* ----- End Dropdown Sub Menu ----- */
 /* ----- Start Social Icons ----- */
