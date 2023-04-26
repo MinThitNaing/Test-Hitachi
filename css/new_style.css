@@ -756,6 +756,8 @@ text-align: center;
   align-items: center;
   line-height: 1.3;
 }
+
+}
 /* ----- End Career Section ----- */
 /* ----- Start Production Section ----- */
 .product{
@@ -1711,11 +1713,13 @@ text-align: center;
 }
 
 .package-slider{
-    margin: 30px;
+    margin: 20px 0 20px;
 }
 
 .package-detail{
     width: 80%;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 .pt-detail{
@@ -2110,7 +2114,7 @@ text-align: center;
 /*------- Careers ---------*/
 .main-banner {
   position: relative;
-  padding: 100px 0px 185px 0px;
+  padding: 100px 0 0;
 }
 
 .main-banner:after {
@@ -2143,7 +2147,7 @@ text-align: center;
   color: #2a2a2a;
   font-weight: 700;
   line-height: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .main-banner h4 em {
@@ -2240,6 +2244,8 @@ text-align: center;
   width: 300px;
   height: 300px;
   perspective: 1000px;
+  transition: .7s ease;
+
 }
 
 .flip-card-inner {
@@ -2271,7 +2277,7 @@ text-align: center;
 
 .flip-card-back {
   padding: 120px 0px;
-  background-color: #c02;
+  background-color: rgb(171, 62, 81);
   transform: rotateY(180deg);
 }
 
@@ -2293,18 +2299,32 @@ text-align: center;
 }
 
 .browser-more-btn{
+  display: inline-block;
   width: 300px;
   text-align: center;
-  text-decoration: underline;
-  padding: 20px;
+  text-decoration: none;
+  padding: 20px 30px;
   font-size: 20px;
-  border: 1px solid #c02;
   color: #c02;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(-2.4rem);
+  }
+  100% {
+      transform: translateX(0);
+  }
 }
 
 .browser-more-btn:hover{
   color: #Fff;
   background: #c02;
+  border-radius: 12px;
 }
 
 

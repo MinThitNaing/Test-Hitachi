@@ -284,6 +284,10 @@ border-right: 1px solid #fff;
     margin: 0 3px !important;
     transition: all 0.5s;
   }
+
+  .portfolio-container {
+    margin-right: 2.5rem !important;
+  }
 }
 /* ----- End Dropdown Sub Menu ----- */
 /* ----- Start Social Icons ----- */
@@ -834,7 +838,17 @@ right: 15px;
     display: block !important;
     width: 100% !important;
   }
-  .main-col-2 {
+  .main-image {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 300px !important;
+   
+    z-index: 1;
+    background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0));
+  }
+
+  .about-img {
     display: none !important;
   }
 }
