@@ -1,0 +1,451 @@
+/* --------breadcumps--------  */
+.breadcrumbs {
+    padding: 90px 0 60px 0;
+    min-height: 70vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .breadcrumbs:before {
+    content: "";
+    background-color: rgba(4, 9, 10, 0.7);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 56px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  
+  .breadcrumbs ol a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+  
+  .breadcrumbs ol a:hover {
+    text-decoration: underline;
+    color: #c02;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+  }
+  
+  @media (max-width:420px) {
+    .breadcrumbs {
+        padding: 90px 0 60px 0;
+        min-height: 40vh !important;
+    }
+
+    .breadcrumbs h2 {
+        font-size: 1.4rem;
+    } 
+
+    .breadcrumbs li a {
+        font-size: .8rem;
+    }
+
+    .list-navigation {
+        display: none;
+    }
+
+    /* ------footer section start------  */
+    .footer {
+        margin-top: 1rem;
+        background-color: rgba(100,100,100,.5);
+        padding: 1rem;
+    }
+
+    .footer-row h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-row a {
+        font-size: .8rem;
+        width: 4rem !important;
+        padding: 3px 0;
+    }
+    /* --------footer section end --------  */
+
+    /* -------section header responsive-------  */
+
+    .section-header {
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
+      }
+      
+      .section-header h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: #000;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+      }
+      
+      .section-header h2:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #D4403A;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      /* ------panel section start---  */
+      .panel-card{
+        box-sizing: content-box;
+        box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+        background: #fff;
+        position: relative;
+        border-radius: 12px;
+        height: 70%;
+        margin: 12px 4px 2px;
+        margin-bottom: 40px;
+        padding: 8px 10px;
+    }
+
+    .panel-card h3, .package-card h3 {
+        font-size: 1rem;
+    }
+
+    .product-col img {
+        width: 18rem !important;
+    }
+
+    .product-text h3 {
+        font-size: 1.1rem;
+    }    
+
+    .product-text p {
+        font-size: 0.8rem;
+    } 
+
+    .product-text a, .package-card a {
+        width: 7rem !important;
+        font-size: 1rem;
+        padding: 5px 0 !important;
+    }
+        /* -------panel section end-------  */
+
+
+      /* ------installation service start------  */
+    .product {
+        margin-bottom: 2rem;
+    }
+    .product-content {
+        width: 50%;
+        padding: 5px 10px;
+        text-align: justify;
+    }
+
+    .product-content h1 {
+        font-size: 1rem;
+        color: white;
+    }
+
+    .product-content p {
+        font-size: .7rem;
+        color: #fff;
+    }
+    /* -----installation section end-------  */
+
+    /* ------after salse service sectin start------  */
+    .after-sale {
+        padding: 90px 0 60px 0;
+        min-height: 50vh;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+    .ass-container h2 {
+        color: #fff;
+    }
+
+    .ass-container p, .ass-container  a {
+        font-size: .7rem;
+        color: #fff;
+    }
+
+    .ass-container .row {
+        margin-bottom: 2rem;
+    }
+
+    .ass-container ul li {
+        list-style: none;
+    }
+
+    .features .section-header span, .section-header span {
+        display: none;
+    }
+
+    .features .section-header h2 {
+        font-size: .8rem;
+    }
+
+    .features a h4 {
+        font-size: .7rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ass-tab h3, .ass-tab h4 {
+        font-size: 1rem;
+    }
+
+    .ass-tab p, .ass-tab ul {
+        font-size: .7rem;
+    }
+
+    .ass-tab a button {
+        width: 4rem !important;
+        font-size: .7rem;
+        padding: 2px 0 !important;
+    }
+
+    .features .nav-tabs {
+        border: 0;
+      }
+
+      .features .nav-link {
+        padding: 15px 0;
+        transition: 0.3s;
+        border-radius: 0;
+        cursor: pointer;
+        height: 100%;
+        border: 0;
+        border-bottom: 4px solid #e2e4e6;
+      }
+
+      .features .nav-link.active {
+        color: #D4403A;
+        background-color: transparent;
+        border-color: #D4403A;
+      }
+
+      /* -------after sale service section end-------  */
+
+      /* ------contact section start-------  */
+      .contact-container .card {
+        width: 20rem !important;
+        height: 28rem !important;
+        margin: 0 auto 10px;
+        padding: 10px;
+      }
+
+      .contact-container .card-body h5 {
+        font-size: 1rem;
+      }
+
+      .contact-container .card-body p {
+        font-size: .8rem;
+      }
+
+      .contact-container .card-body a {
+        font-size: .6rem;
+        padding: 5px 10px;
+      }
+
+      /* ------contact end-------  */
+
+      /* --------new release section start--------  */
+      .new-release-container h3 {
+        margin: 10px 0;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .new-release-container div {
+        width: 21rem;
+        margin: 10px auto;
+      }
+
+      .new-release-container .post-meta {
+        font-size: .8rem;
+      }
+
+      .new-release-container p {
+        font-size: .7rem;
+      }
+
+      .new-release-container .photo img {
+        width: 1.5rem;
+      }
+
+      .new-release-container .name h3 {
+        font-size: .7rem;
+      }
+
+      .new-release-container .author {
+        position: relative;
+      }
+
+      .new-release-container .name {
+        position: absolute;
+        left: 2rem;
+      }
+
+      .custom-pagination a {
+        font-size: .7rem;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        font-family: Helvetica, sans-serif;
+        margin: 3px;
+        transition: 0.3s all ease;
+      }
+      
+      .custom-pagination a.active {
+        background: #c02;
+        color: #fff;
+      }
+      
+      .custom-pagination a.active:hover {
+        background: rgba(0, 0, 0, 0.9);
+      }
+      
+      .custom-pagination a:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      
+      .custom-pagination a.prev,
+      .custom-pagination a.next {
+        width: auto !important;
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+      .custom-pagination a.prev:hover,
+      .custom-pagination a.next:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .aside-block {
+        margin-bottom: 30px;
+      }
+      
+      .aside-block .custom-tab-nav .nav-item {
+        display: inline-block;
+      }
+      
+      .aside-block .custom-tab-nav .nav-item button {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 20px;
+      }
+      
+      .aside-block .custom-tab-nav .nav-item button.active {
+        background-color: #c02 !important;
+        background-color: transparent !important;
+        color: #c02;
+        border-bottom: 2px solid #c02;
+      }
+
+      .aside-block button {
+        font-size: .7rem !important;
+      }
+
+      .new-release .post-meta {
+        font-size: .8rem !important;
+      }
+
+      .new-release  h2 {
+        font-size: .8rem;
+        font-weight: 600;
+      }
+
+      .new-release .author {
+        font-size: .8rem !important;
+      }
+
+      .aside-links li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      
+      .aside-links li a {
+        display: block;
+        color: rgba(0, 0, 0, 0.7);
+      }
+      
+      .aside-links li a:hover,
+      .aside-links li a:focus {
+        color: rgba(0, 0, 0, 1);
+      }
+      
+      .aside-tags li {
+        display: inline-block;
+      }
+      
+      .aside-tags li a {
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.7);
+        padding: 7px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 3px;
+        transition: 0.3s all ease;
+      }
+      
+      .aside-tags li a:hover,
+      .aside-tags li a:focus {
+        color: rgba(0, 0, 0, 1);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+      }
+
+    .aside-title {
+        font-size: 1.3rem;
+    }
+      
+
+  }
+
+
+
+
+
