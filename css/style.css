@@ -1,4 +1,8 @@
 /* ----- Start Reusable Codes ----- */
+html {
+  overflow-x: hidden;
+}
+
 body{
   font-family: Helvetica bold,sans-serif;
   color: #333;
@@ -11,6 +15,7 @@ body{
   -o-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 
 h1, h2, h3, h4, h5, h6{
   color: #000;
@@ -119,10 +124,52 @@ span{
 
 @media (max-width: 450px) {
   .navbar-brand{
-    font-size: 1rem;
+    font-size: .8rem;
   }
   .navbar-brand img{
     height: 25px;
+  }
+
+  .navbar-brand .logo-text {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav2.navbar {
+    padding: 2px;
+  }
+
+  .container .hitachi-logo {
+    width: 70px;
+    height: 20px;
+  }
+
+  .nav1.navbar {
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  button.navbar-toggler {
+    font-size: .8rem !important;
+    padding: 4px 8px;
+  }
+
+  .nav1-info-container img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav1-info-container span, .nav2-info-container span {
+    font-size: .9rem;
+  }
+
+  #LangMenu {
+    padding: 0;
+  }
+
+  #LangMenu a {
+    font-size: .8rem;
+    padding: 0 10px;
   }
 }
 /* ----- End Navigation Bar ----- */
@@ -531,22 +578,44 @@ bottom: 15px;
 right: 15px;
 }
 
-@media (max-width: 850px) {
-  .portfolio-info h4{
-    margin-top: -50px !important;
+@media (min-width:450px) and (max-width: 850px) {
+  .portfolio-last-pic {
+    position: absolute;
+    left: 140px;
+    top: 30px;
   }
+
+  .main-container .main-margin {
+    margin: 0 auto !important;
+  }
+
 }
 
 @media (max-width: 450px) {
   .information{
-    margin: -20px 32px 16px;
+    margin: -20px 9px 0 21px;
   }
   .portfolio-item {
-    margin-bottom: 50px !important;
+    margin-bottom: 20px !important;
   }
-  .portfolio-info h4{
-    margin-top: -80px !important;
+
+  .main-container .main-margin {
+    margin: 0 auto !important;
   }
+
+  .main-container h2, .main-image-content h4 a {
+    font-size: 1.1rem !important;
+  }
+
+  .main-container .main-text p, .main-image-content p {
+    font-size: .8rem !important;
+    text-align: justify;
+  }
+  
+  .main-image-content.social {
+    top: 9.5rem !important;
+  }
+  
 }
 /* ----- End Office and Branch Section ----- */
 /* ----- Start Main Section ----- */
@@ -782,6 +851,8 @@ right: 15px;
   margin-bottom: 0!important;
 }
 
+
+
 @media only screen and (max-width:1024px) {
   .fusion-body .fusion-builder-column-24{
       width:50% !important;
@@ -865,6 +936,11 @@ right: 15px;
   }
   .main-image-content h4 {
     font-size: 18px;
+  }
+
+  .main-container.container {
+    margin-top: 5px !important;
+    padding-top: 10px !important;
   }
 }
 /* ----- End Main Section ----- */
@@ -1143,7 +1219,7 @@ margin-bottom: 0;
   background-color: #c02;
 }
 
-@media (max-width: 850px) {
+@media (min-width:450px) and (max-width: 850px) {
   .features .nav-link h4{
     font-size: 14px !important;
   }
@@ -1153,6 +1229,34 @@ margin-bottom: 0;
   .features .tab-pane h3{
     font-size: 29px;
   }
+
+  .tab-pane .img-container {
+    height: 490px !important;
+  }
+
+  .tab-pane .img-container img {
+    height: 480px !important;
+  }
+
+  .tab-pane#tab-2 img {
+   width: 320px !important;
+   height: 370px !important;
+  }
+
+  .tab-pane h3 {
+    font-size: 1.4rem !important;
+  } 
+
+  .tab-pane p, .tab-pane ul {
+    font-size: .9rem !important;
+    text-align: justify;
+  }
+
+  .tab-pane a button {
+    display:  inline-block !important;
+    font-size: .8rem;
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -1187,6 +1291,46 @@ margin-bottom: 0;
   }
   .btn-group-lg>.btn, .btn-lg {
     font-size: 1rem;
+  }
+
+  .tab-content {
+    margin-top: 2rem;
+  }
+
+  .tab-pane .img-container {
+    height: 300px;
+  }
+
+  .tab-pane .img-container img {
+    width: 180px;
+    height: 280px ;
+  }
+
+  .features h2 {
+    font-size: 1.1rem;
+    padding-top: 0px !important;
+  }
+
+  .features h4 {
+    font-size: 1rem;
+  }
+
+  .tab-pane h3 {
+    font-size: 1.1rem !important;
+  }
+
+  .tab-pane p, .tab-pane ul {
+    font-size: .9rem !important;
+    text-align: justify;
+  }
+
+  .tab-pane a button {
+    font-size: .7rem;
+  }
+
+  .tab-pane .dt {
+    padding: 0 20px;
+    margin: 0 auto;
   }
 }
 /* ----- End Product Section ----- */
@@ -1228,6 +1372,60 @@ margin-bottom: 0;
   padding: 7px 40px;
   background-color: #c02;
   margin: 0 auto;
+}
+
+@media (max-width: 850px) {
+  .careers .container .careers-img, .careers .container .careers-text {
+    width: 680px;
+    margin: 0 auto;
+  }
+
+  .careers .container img, .careers .container .career-box {
+    width: 100%;
+  }
+
+  .careers .career-box {
+    height: 350px;
+  }
+
+  .careers .career-box h2 {
+    font-size: 2rem;
+  }
+
+  .careers .career-box p {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .careers .container .careers-img, .careers .container .careers-text {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .careers .container img, .careers .container .career-box {
+    width: 100%;
+  }
+
+  .careers .career-box {
+    height: 280px;
+  }
+
+  .careers .career-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .careers .career-box p {
+    font-size: 1rem;
+  }
+
+  .careers .career-box a {
+    font-size: .8rem;
+    padding: 0;
+  }
 }
 /* ----- End Career Section ----- */
 
@@ -1339,6 +1537,37 @@ opacity: 0.3;
   }
 }
 
+@media (max-width:850px) {
+  .testimonials .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonials .section-header swiper-slide p {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-decoration: none !important;
+  }
+
+  .testimonials .section-header .profile h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonials .section-header h2 {
+    font-size: 1rem;
+  }
+
+  .testimonials .section-header swiper-slide p {
+    font-size: .9rem;
+    line-height: 1.3rem;
+  }
+
+  .testimonials .section-header .profile h3 {
+    font-size: 1rem;
+  }
+}
+
 /* --------End Testimonials Section ------  */
 
 /* ----- Start FooterArea -----*/
@@ -1396,5 +1625,23 @@ opacity: 0.3;
 
 .text-right{
     right: 10%;
+}
+
+@media (max-width:450px) {
+  .footer {
+      margin-top: .7rem;
+      background-color: rgba(100,100,100,.5);
+      padding: 1rem;
+  }
+
+  .footer-row h3 {
+      font-size: 1.2rem;
+  }
+
+  .footer-row a {
+      font-size: .8rem;
+      width: 5rem !important;
+      padding: 3px 0;
+  }
 }
 /* ----- End FooterArea -----*/
