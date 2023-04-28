@@ -291,7 +291,7 @@ span {
     overflow: clip;
     width: 249px;
     aspect-ratio: auto 249 / 83;
-    height: 83px;
+    height: 120px;
 }
 
 .nav-item:hover>.dropdown,
