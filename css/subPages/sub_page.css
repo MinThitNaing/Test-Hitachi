@@ -194,16 +194,23 @@ section.package-slider {
         margin: auto;
     }
     /* ------panel section start---  */
+    .panel-container {
+        margin: 0px auto !important;
+        padding: 0 20px !important;
+    }
     .panel-card {
         box-sizing: content-box;
         box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
         background: #fff;
         position: relative;
         border-radius: 12px;
-        height: 70%;
-        margin: 12px 4px 2px;
+        height: 420px !important;
+        /* margin: 12px 4px 2px; */
         margin-bottom: 40px;
         padding: 8px 10px;
+    }
+    .panel-card .card-img img {
+        width: 500px !important;
     }
     .panel-card h3,
     .package-card h3 {
@@ -216,17 +223,16 @@ section.package-slider {
     .product-col img {
         width: 18rem !important;
     }
-    .product-text h3 {
-        font-size: 1.1rem;
+    .card-img h3 {
+        font-size: .9rem !important;
     }
     .product-text p {
         font-size: 0.8rem;
     }
-    .product-text a,
-    .package-card a {
+    .card-img a {
         width: 7rem !important;
-        font-size: 1rem;
-        padding: 5px 0 !important;
+        font-size: .9rem !important;
+        padding: 2px 0 !important;
     }
     /* -------panel section end-------  */
     /* ------installation service start------  */
