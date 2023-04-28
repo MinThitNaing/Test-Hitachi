@@ -575,10 +575,13 @@ section.package-slider {
         font-size: .7rem;
     }
     .certificate .card {
-        height: 450px !important;
+        height: 420px !important;
         width: 270px !important;
-        padding: 15px 10px 25px !important;
+        padding: 0 10px 25px !important;
         margin: 0 auto;
+    }
+    .certificate .card .text-center {
+        margin-top: 10px !important;
     }
     .certificate .card img {
         width: 100% !important;
@@ -1169,10 +1172,13 @@ section.package-slider {
         font-size: .7rem;
     }
     .certificate .card {
-        height: 450px !important;
+        height: 425px !important;
         width: 270px !important;
-        padding: 15px 10px 25px !important;
+        padding: 0 10px 25px !important;
         margin: 0 auto;
+    }
+    .certificate .card .text-center {
+        margin-top: 10px !important;
     }
     .certificate .card img {
         width: 100% !important;
